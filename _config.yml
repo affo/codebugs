@@ -1,0 +1,14 @@
+# Site settings
+title: CodeBugs
+email: lorenzo.affetti@gmail.com
+description: > # "
+    This blog gathers our -- Riccardo Tommasini and Lorenzo Affetti --
+    experiences writing, experimenting and facing code."
+baseurl: "/codebugs"
+url: "http://affo.github.io/codebugs"
+github_username: affo
+
+# Build settings
+markdown: kramdown
+
+exclude: [README.md, Gemfile, Gemfile.lock]

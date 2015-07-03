@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div id="landing" class="container-s">
+    <p>We are <strong>Lorenzo Affetti</strong> and <strong>Riccardo Tommasini</strong>.</p>
+    <p>We are not professional developers, but only future researchers and <strong>coding enthusiasts</strong>.</p>
+    <p>With this blog, our aim is to <strong>share</strong> with anyone who wants to read about our experience in writing and <strong>experimenting</strong> with different frameworks, middleware, languages and paradigms.</p>
+    <p>We are not startuppers or developers for a commercial product. This blog is not intended to be an authoritative reference for the technologies explained and it is far from sponsoring a technology with respect of another one. Any opinion given about a piece of software or anything else has to be intended as strictly personal.</p>
+</div>
+
+<ul class="post-list">
+{% for post in site.posts %}
+  <li>
+    <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <span class="post-meta"><em>{{ post.date | date: "%b %-d, %Y" }}</em></span>
+    </h2>
+  </li>
+{% endfor %}
+</ul>

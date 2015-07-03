@@ -1,0 +1,109 @@
+$max-width: 970px;
+$laptop: 970px;
+$default-margin: 30px;
+$lightweight: 300;
+$navbar-height: 100px;
+
+$font-size-normal: 24px;
+$font-size-medium: 30px;
+$font-size-big: 45px;
+$font-scale: 10px;
+
+$blue: #2196F3;
+$yellow: #FFFF00;
+$pink: #F06292;
+$notblack: #424242;
+$light-gray: #D3D3D3;
+$green: #00E676;
+
+body { padding-top: $navbar-height; }
+nav { height: $navbar-height; }
+
+body, html {
+    font-family: lato;
+    font-weight: $lightweight;
+    letter-spacing: 1px;
+    font-size: $font-size-normal;
+    line-height: 150%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.navbar {
+    background-color: $green;
+    background-image: none;
+    border:none;
+}
+
+.navbar-header {
+    height: $navbar-height;
+    position: relative;
+}
+.navbar-default .navbar-brand {
+    font-size: $font-size-big;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left:0;
+}
+
+.container-s {
+    width: 80%;
+}
+
+a {
+    color: $pink;
+}
+
+.post {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+#landing {
+    margin: $default-margin auto;
+    font-size: $font-size-normal;
+    font-weight: $lightweight;
+    line-height: 150%;
+    letter-spacing: 2px;
+    font-style: italic;
+
+}
+
+.post-title, .post-title h1 {
+    font-size: $font-size-big;
+    margin: $default-margin;
+}
+
+.footer {
+    margin-top: $default-margin;
+    padding: $default-margin;
+    background-color: $light-gray;
+    text-align: right;
+}
+
+@media (max-width: $laptop) {
+
+    html, body {
+        font-size: $font-size-normal - $font-scale;
+    }
+
+    #navbar {
+        font-size: $font-size-medium - $font-scale;
+    }
+
+    .post-title, .post-title h1 {
+        font-size: $font-size-medium - $font-scale;
+    }
+
+    #navbar {
+        width:100%;
+        margin: 0;
+    }
+
+    .post {
+        padding: 0 3%;
+    }
+}
